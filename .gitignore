@@ -1,0 +1,43 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Data (large files — manifests are committed)
+data/raw/
+data/keypoints/
+data/cache/
+*.h5
+*.hdf5
+*.npz.bak
+
+# Model artifacts (compiled/exported — scripts are committed)
+models/compiled/
+models/exported/
+*.onnx
+*.bin
+*.tflite
+*.dlc
+!models/configs/*.json
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Benchmark results are committed; raw logs optional
+bench/logs/
+
+# Scratch
+scratch/
+
+# Secrets
+*.key
+*.pem

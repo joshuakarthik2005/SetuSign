@@ -1,0 +1,26 @@
+# Core dependencies
+numpy>=1.26,<2.0
+opencv-python>=4.8
+mediapipe>=0.10.9
+
+# Inference
+onnxruntime>=1.17
+
+# Training (development only)
+torch>=2.1
+torchvision>=0.16
+
+# Utilities
+tqdm
+scipy
+scikit-learn
+pyyaml
+python-dotenv
+
+# Data handling
+h5py
+pandas
+
+# Testing
+pytest
+pytest-cov

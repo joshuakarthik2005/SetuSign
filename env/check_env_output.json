@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-09-30T20:16:47.853966",
+  "system": {
+    "os": {
+      "release": "11",
+      "version": "10.0.26200",
+      "edition": "CoreSingleLanguage"
+    },
+    "cpu": {
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+      "architecture": "64bit",
+      "is_arm64": false
+    }
+  },
+  "python": {
+    "version": "3.12.10",
+    "implementation": "CPython",
+    "architecture": "64bit",
+    "executable": "G:\\snap\\setusign\\.venv\\Scripts\\python.exe",
+    "prefix": "G:\\snap\\setusign\\.venv",
+    "is_venv": true
+  },
+  "packages": {
+    "onnxruntime": {
+      "installed": true,
+      "version": "1.30.0",
+      "providers": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "has_qnn": false,
+      "note": "QNNExecutionProvider NOT available. Running on CPU only. Install onnxruntime-qnn on a Snapdragon device for NPU support."
+    },
+    "mediapipe": {
+      "installed": true,
+      "version": "1.0.1",
+      "note": "MediaPipe is installed and importable."
+    },
+    "torch": {
+      "installed": true,
+      "version": "2.14.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "note": "PyTorch installed. CUDA: no."
+    },
+    "opencv": {
+      "installed": true,
+      "version": "4.11.0",
+      "note": "OpenCV is installed and importable."
+    }
+  },
+  "ai_hub_token": {
+    "env_var": "QAI_HUB_API_TOKEN",
+    "is_set": false,
+    "note": "QAI_HUB_API_TOKEN is NOT set. Required for Qualcomm AI Hub model compilation."
+  }
+}

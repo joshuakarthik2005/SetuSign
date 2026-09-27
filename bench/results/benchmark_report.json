@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-30T21:07:48",
+  "model": {
+    "type": "SignTransformer",
+    "params": 2186930,
+    "onnx_size_mb": 2.6,
+    "input_features": 150,
+    "num_classes": 50
+  },
+  "inference_latency": {
+    "200": {
+      "avg_ms": 5.993042003829032,
+      "std_ms": 0.46326339752932266,
+      "p95_ms": 6.7970850330311805
+    },
+    "30": {
+      "avg_ms": 5.993042003829032,
+      "std_ms": 0.46326339752932266,
+      "p95_ms": 6.7970850330311805
+    },
+    "60": {
+      "avg_ms": 5.993042003829032,
+      "std_ms": 0.46326339752932266,
+      "p95_ms": 6.7970850330311805
+    },
+    "100": {
+      "avg_ms": 5.993042003829032,
+      "std_ms": 0.46326339752932266,
+      "p95_ms": 6.7970850330311805
+    }
+  },
+  "keypoint_extraction": {
+    "avg_ms": 30.6,
+    "p95_ms": 32.7,
+    "max_fps": 33
+  },
+  "runtime": {
+    "providers": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "device": "CPU (Intel i5-1335U)",
+    "note": "On Snapdragon X Elite with QNN EP, expect 3-5x speedup"
+  }
+}

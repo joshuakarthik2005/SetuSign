@@ -149,12 +149,13 @@ class SignRecognizer:
         if not self.has_model:
             return self._demo_predict(keypoint_sequence)
 
-        # Pad/truncate to model's expected length
+        # Pad/truncate to model's expected length (fixed at 200)
         T, F = keypoint_sequence.shape
-        max_len = 200  # Must match training
+        max_len = 200
         if T > max_len:
             indices = np.linspace(0, T - 1, max_len, dtype=int)
             keypoint_sequence = keypoint_sequence[indices]
+            T = max_len
         elif T < max_len:
             pad = np.zeros((max_len - T, F), dtype=np.float32)
             keypoint_sequence = np.concatenate([keypoint_sequence, pad], axis=0)

@@ -1,14 +1,21 @@
 # Core dependencies
-numpy>=1.26,<2.0
+numpy>=1.26
 opencv-python>=4.8
-mediapipe>=0.10.9
+mediapipe>=0.10.9,<1.0
 
 # Inference
 onnxruntime>=1.17
+onnx>=1.16,<1.17
 
 # Training (development only)
 torch>=2.1
 torchvision>=0.16
+
+# ONNX export
+onnxscript>=0.7
+
+# TTS
+pyttsx3>=2.90
 
 # Utilities
 tqdm
@@ -18,7 +25,6 @@ pyyaml
 python-dotenv
 
 # Data handling
-h5py
 pandas
 
 # Testing
